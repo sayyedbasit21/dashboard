@@ -1,0 +1,175 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="head">
+        <img src="../../assets/coro.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="text-warning text-center my-2">
+      <b> Covid - 19 Cases In INDIA </b>
+    </h1>
+  </div>
+
+  <!-- India Cases -->
+
+  <div class="row">
+    <!-- Confirm Cases -->
+    <mat-card class="example-card warn">
+      <mat-card-header>
+        <mat-card-title class="text-primary"
+          >Total Confirm Cases</mat-card-title
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="loading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-primary">
+          <strong> {{ indiaconfirm | number }} </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Recoverd Cases -->
+
+    <mat-card class="example-card recover">
+      <mat-card-header>
+        <mat-card-title class="text-success"
+          >Total Recover Cases</mat-card-title
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="loading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-success">
+          <strong> {{ indiarecoverd | number }} </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Total Deaths -->
+    <mat-card class="example-card death">
+      <mat-card-header>
+        <mat-card-title class="text-danger">Total Deaths Cases</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="loading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-danger">
+          <strong>
+            {{ indiadeath | number }}
+          </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Dhule City Cases   -->
+
+  <div>
+    <h1 class="text-warning text-center my-2">
+      <b> Covid - 19 Cases In DHULE, MAHARASHTRA </b>
+    </h1>
+  </div>
+
+  <div class="row">
+    <!-- Confirm Cases -->
+    <mat-card class="example-card warn">
+      <mat-card-header>
+        <mat-card-title class="text-primary"
+          >Total Confirm Cases</mat-card-title
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="dloading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-primary">
+          <strong> {{ dhuleconfirm | number }} </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Recoverd Cases -->
+
+    <mat-card class="example-card recover">
+      <mat-card-header>
+        <mat-card-title class="text-success"
+          >Total Recover Cases</mat-card-title
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="dloading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-success">
+          <strong> {{ dhulerecover | number }} </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Total Deaths -->
+    <mat-card class="example-card death">
+      <mat-card-header>
+        <mat-card-title class="text-danger">Total Deaths Cases</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngIf="dloading" class="d-flex justify-content-center">
+          <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <p class="text-center text-danger">
+          <strong>
+            {{ dhuledeath | number }}
+          </strong>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="head mt-2 py-2 bg-info">
+    <p class="text-center mt-3 text-white">
+      <strong> All Rights Reserved &copy; 2020 </strong>
+    </p>
+    <div class="text-center text-white">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/sayyed.basit24"
+            ><i class="fas fa-instagram"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fas fa-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fas fa-youtube"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fas fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

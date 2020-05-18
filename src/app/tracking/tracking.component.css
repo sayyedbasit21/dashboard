@@ -1,0 +1,28 @@
+.example-card {
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 5%;
+}
+
+.warn {
+  border-bottom: 5px solid rgb(0, 217, 255);
+}
+
+.recover {
+  border-bottom: 5px solid rgb(3, 209, 47);
+}
+
+.death {
+  border-bottom: 5px solid red;
+}
+
+img {
+  /* background-size: cover; */
+  width: 100%;
+}
+
+/* .my {
+  font-size: 30px;
+} */
